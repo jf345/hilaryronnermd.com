@@ -40,10 +40,10 @@ if (form) {
         form.reset();
         if (success) success.style.display = 'block';
       } else {
-        btn.textContent = 'Error — please call us';
+        btn.textContent = 'Error – please call us';
       }
     } catch(err) {
-      btn.textContent = 'Error — please call us';
+      btn.textContent = 'Error – please call us';
     }
     btn.disabled = false;
     if (btn.textContent === 'Sending…') btn.textContent = 'Send Message';
