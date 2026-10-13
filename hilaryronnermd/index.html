@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hilary Ronner, M.D., F.A.C.S. — Ophthalmologist, New York City</title>
+  <meta name="description" content="Dr. Hilary Ronner is a Pediatric and Adult Ophthalmologist based in New York City, practicing for over 35 years. Located at 66 East 79th Street, Manhattan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+      background: var(--navy);
+      padding: 0;
+      overflow: hidden;
+    }
+    .hero-left {
+      display: flex;
+      align-items: center;
+      padding: 9rem 4rem 6rem;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-right {
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-right img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
+      opacity: 0.88;
+    }
+    .hero-right::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, var(--navy) 0%, transparent 30%);
+      z-index: 1;
+      pointer-events: none;
+    }
+    .photo-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 500px;
+    }
+    .photo-strip-img {
+      overflow: hidden;
+    }
+    .photo-strip-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
+      display: block;
+    }
+    .photo-strip-text {
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      padding: 4rem;
+    }
+    .photo-strip-text-inner { max-width: 420px; }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-right { display: none; }
+      .hero-left { padding: 9rem 2rem 5rem; }
+      .photo-strip { grid-template-columns: 1fr; }
+      .photo-strip-img { min-height: 320px; }
+      .photo-strip-text { padding: 3rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">
+      Hilary Ronner, M.D., F.A.C.S.
+      <span>Ophthalmologist · New York City</span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Dr. Ronner</a></li>
+        <li><a href="faqs.html">FAQs for Patients</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Dr. Ronner</a>
+  <a href="faqs.html">FAQs for Patients</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Pediatric &amp; Adult Ophthalmology · Manhattan</p>
+      <h1>Caring for eyes<br>in New York City<br>for over 35 years.</h1>
+      <p class="hero-sub">
+        Dr. Hilary Ronner treats children and adults with warmth, precision,
+        and a lifelong passion for the specialty — forging lasting relationships
+        with every patient she sees.
+      </p>
+      <a href="contact.html" class="btn btn-solid">Book an Appointment</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="images/hilary-1.jpg" alt="Dr. Hilary Ronner in her Manhattan ophthalmology office">
+  </div>
+</section>
+
+<div class="credentials-strip">
+  <div class="credentials-grid">
+    <div class="cred-item"><strong>Diplomate</strong>American Board of Ophthalmology</div>
+    <div class="cred-item"><strong>Fellow</strong>American College of Surgeons</div>
+    <div class="cred-item"><strong>Affiliated Physician</strong>Lenox Hill Hospital (Northwell)</div>
+    <div class="cred-item"><strong>Board Member</strong>Fight for Sight</div>
+  </div>
+</div>
+
+<div class="photo-strip">
+  <div class="photo-strip-img">
+    <img src="images/hilary-2.png" alt="Dr. Ronner with diagnostic equipment in her office">
+  </div>
+  <div class="photo-strip-text">
+    <div class="photo-strip-text-inner">
+      <p class="section-label">Welcome</p>
+      <div class="gold-rule"></div>
+      <h2 class="section-title" style="margin-bottom:1.4rem;">
+        A physician who loves<br>what she does.
+      </h2>
+      <p>
+        I'm a practicing ophthalmologist based in Manhattan, treating children and
+        adults for over thirty-five years. My office is located at 66 East 79th Street,
+        between Park and Madison Avenues on the Upper East Side.
+      </p>
+      <p>
+        Whether you're bringing a child in for their first full eye exam or seeking
+        care for an adult condition, you'll find a warm, attentive practice where you
+        are truly known as a patient — not just a chart.
+      </p>
+      <p style="margin-bottom:1.6rem;">
+        <strong>Dr. Ronner is currently accepting new patients.</strong>
+      </p>
+      <a href="about.html" class="btn">Learn About Dr. Ronner</a>
+    </div>
+  </div>
+</div>
+
+<section class="section" style="background: var(--ivory); padding-top: 5rem; padding-bottom: 5rem;">
+  <div class="container">
+    <div class="intro-aside" style="max-width: 680px; margin: 0 auto;">
+      <p class="section-label">Education &amp; Training</p>
+      <h3 style="font-family: var(--serif); font-size: 1.5rem; color: var(--ivory); margin: 0.5rem 0 1.5rem;">A foundation of excellence</h3>
+      <ul class="edu-list">
+        <li>Fellowship in Pediatric Ophthalmology &amp; Ocular Oncology<br>The Hospital for Sick Children, University of Toronto</li>
+        <li>Residency — The Harkness Eye Institute, Columbia-Presbyterian Medical Center</li>
+        <li>Internship — Overlook Medical Center, Summit, NJ</li>
+        <li>M.D. — Columbia University College of Physicians &amp; Surgeons</li>
+        <li>B.A. Cum Laude — Barnard College · Major: Music History</li>
+        <li>The Bronx High School of Science</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="accepting-banner">
+  <div class="container">
+    <h2>Now Accepting New Patients</h2>
+    <p>Call our office or use the contact form to schedule your appointment.</p>
+    <a href="contact.html" class="btn">Contact My Office</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="site-logo">Hilary Ronner, M.D., F.A.C.S.<span>Ophthalmologist · New York City</span></div>
+        <p>Pediatric and adult ophthalmology on the Upper East Side of Manhattan, serving patients for over 35 years.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Dr. Ronner</a></li>
+          <li><a href="faqs.html">FAQs for Patients</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Office</h5>
+        <p>66 East 79th Street – Street Level</p>
+        <p>New York, NY 10075</p>
+        <p style="margin-top:0.8rem;"><a href="tel:2129357272">(212) 935-7272</a></p>
+        <p>Mon &amp; Fri: 10:15am – 5:15pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Hilary Ronner, M.D., F.A.C.S. All rights reserved.</p>
+      <p>66 East 79th Street, New York, NY 10075</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
